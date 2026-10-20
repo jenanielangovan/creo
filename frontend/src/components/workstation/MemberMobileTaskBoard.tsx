@@ -44,6 +44,7 @@ interface MemberMobileTaskBoardProps {
   setToastMessage: (msg: { text: string; type: "success" | "error" } | null) => void;
   showToast: (text: string, type?: "success" | "error") => void;
   startMutation: UseMutationResult<any, Error, string, unknown>;
+  onQaApprove?: (taskId: string) => void;
   openUpload: (task: PodTask) => void;
   setCreateOpen: (open: boolean) => void;
   setNewClientId: (id: string) => void;
@@ -84,6 +85,7 @@ export function MemberMobileTaskBoard({
   setToastMessage,
   showToast,
   startMutation,
+  onQaApprove: _onQaApprove,
   openUpload,
   setCreateOpen,
   setNewClientId,

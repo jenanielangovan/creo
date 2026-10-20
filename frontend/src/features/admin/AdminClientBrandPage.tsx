@@ -7,6 +7,7 @@ import {
   CheckSquare,
   CalendarDays,
   FileStack,
+  Instagram,
   Mail,
   Shield,
   Sparkles,
@@ -23,7 +24,6 @@ import {
   EyeOff,
   Type,
 } from "lucide-react";
-import { Instagram } from "../../ui/brand-icons";
 import { fetchClientBrandProfile } from "../../lib/ops-api";
 import type { ClientBrandProfile } from "../../lib/ops-api";
 import { AdminTopHeader } from "../../components/admin/AdminTopHeader";
